@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kinobillettbestilling</title>
+    <style>
+        /* CSS code for styling */
+        select#movie {
+            width: 80%; /* Adjust the width as needed */
+            max-width: 250px; /* Set a maximum width to prevent it from becoming too wide */
+            padding: 6px; /* Add some padding */
+            margin-bottom: 5px; /* Add some space below the dropdown */
+            margin: 15px; /* Adjust the margin value as needed */
+        }
+
+        #firstname {
+            margin-left: 8px; /* Adjust the margin value as needed */
+        }
+        #quantity {
+            margin-left: 30px; /* Adjust the margin value as needed */
+            width: 30px;
+        }
+        #epost {
+            margin-left: 25px; /* Adjust the margin value as needed */
+        }
+        #etternavn {
+            margin-left: 10px; /* Adjust the margin value as needed */
+        }
+
+        label[for="quantity"] {
+            margin-bottom: 80px; /* Adjust the margin value as needed */
+        }
+    </style>
+</head>
+<div id="tickets-container"></div>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+<form id="ticetForm">
+    <label for="movie">Velg film:</label>
+    <select id="movie" name="movie">
+        <option> velg film her</option>
+        <option> Action</option>
+        <option> Cartoon</option>
+        <option> Comedy</option>
+    </select>
+    <br>
+    <label for="quantity">Antall :</label>
+    <input type="number" id="quantity" name="quantity" min="1,2,3">
+
+</form>
+
+<div id ="confirmation"></div>
+<label> Fornavn:
+    <input type="text" id="firstname" name="firstname" required>
+</label><br>
+<label> Etternavn:
+    <input type="text" id="lastname" name="lasttname" required>
+</label><br>
+<label> Telefonnr:
+    <input type="text" id="telefonnr" name="telefonnr" required>
+</label><br>
+<label> Epost:</label>
+<input type="text" id="epost" name="Epost" required>
+</label><br>
+
+<button type = "submit">Kjøp billett</button>
+<br>
+<h2>Alle billeter</h2>
+<button type 2= "submit">slett alle billetene</button>
+<script src="script.js"></script>
+</body>
+</html>
